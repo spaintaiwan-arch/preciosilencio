@@ -1,0 +1,336 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <title>El precio del silencio — Pacoluís Pérez | Thriller noir en Barcelona</title>
+  <meta name="description" content="Thriller noir ambientado en Barcelona. Una restauradora descubre una falsificación perfecta en una escultura y desata una cacería. El precio del silencio, de Pacoluís Pérez." />
+  <meta name="robots" content="index,follow" />
+
+  <!-- URLs GitHub Pages -->
+  <link rel="canonical" href="https://spaintaiwan-arch.github.io/preciosilencio/" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="El precio del silencio — Pacoluís Pérez" />
+  <meta property="og:description" content="Thriller noir en Barcelona: una restauradora detecta una falsificación imposible en una escultura. Horas después, el dueño aparece muerto." />
+  <meta property="og:url" content="https://spaintaiwan-arch.github.io/preciosilencio/" />
+  <meta property="og:image" content="https://spaintaiwan-arch.github.io/preciosilencio/assets/cover.jpg" />
+  <meta property="og:locale" content="es_ES" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="El precio del silencio — Pacoluís Pérez" />
+  <meta name="twitter:description" content="Arte, corrupción y un secreto por el que se mata. Thriller noir en Barcelona." />
+  <meta name="twitter:image" content="https://spaintaiwan-arch.github.io/preciosilencio/assets/cover.jpg" />
+
+  <link rel="icon" href="assets/favicon.ico" />
+  <link rel="preload" as="image" href="assets/cover.jpg" />
+
+  <style>
+    :root{
+      --bg:#0b0d10;
+      --card:#10141a;
+      --text:#e8edf3;
+      --muted:#b7c0cc;
+      --line:rgba(255,255,255,.08);
+      --accent:#ff3b30;
+      --accent2:#ffd7d4;
+      --max:1100px;
+      --radius:18px;
+      --shadow: 0 12px 40px rgba(0,0,0,.55);
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji","Segoe UI Emoji";
+      background: radial-gradient(1200px 700px at 15% 10%, rgba(255,59,48,.14), transparent 55%),
+                  radial-gradient(900px 600px at 80% 5%, rgba(255,255,255,.06), transparent 50%),
+                  var(--bg);
+      color:var(--text);
+      line-height:1.55;
+    }
+    a{color:inherit; text-decoration:none}
+    .wrap{max-width:var(--max); margin:0 auto; padding:24px}
+    header{
+      position:sticky; top:0; z-index:20;
+      backdrop-filter: blur(10px);
+      background: rgba(11,13,16,.7);
+      border-bottom:1px solid var(--line);
+    }
+    .nav{display:flex; align-items:center; justify-content:space-between; gap:14px}
+    .brand{display:flex; align-items:center; gap:12px; padding:14px 0}
+    .dot{width:10px; height:10px; border-radius:999px; background:var(--accent); box-shadow:0 0 24px rgba(255,59,48,.45)}
+    .brand strong{letter-spacing:.4px}
+    .menu{display:flex; gap:14px; flex-wrap:wrap}
+    .menu a{color:var(--muted); font-size:14px; padding:8px 10px; border-radius:999px}
+    .menu a:hover{color:var(--text); background:rgba(255,255,255,.06)}
+    .hero{
+      display:grid; grid-template-columns: 1.05fr .95fr; gap:26px;
+      padding:42px 0 20px;
+      align-items:center;
+    }
+    @media (max-width: 920px){
+      .hero{grid-template-columns:1fr; padding-top:26px}
+    }
+    .card{
+      background: linear-gradient(180deg, rgba(255,255,255,.06), rgba(255,255,255,.03));
+      border:1px solid var(--line);
+      border-radius:var(--radius);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+    }
+    .book{padding:26px}
+    .kicker{
+      display:inline-flex; align-items:center; gap:10px;
+      padding:6px 10px; border:1px solid var(--line); border-radius:999px;
+      color:var(--muted); font-size:13px;
+      background: rgba(255,255,255,.03);
+    }
+    h1{
+      margin:14px 0 6px;
+      font-size: clamp(34px, 4vw, 56px);
+      line-height:1.05;
+      letter-spacing:.2px;
+    }
+    .author{color:var(--accent2); font-weight:650; letter-spacing:.25px}
+    .tagline{
+      margin:14px 0 18px;
+      font-size: clamp(16px, 1.5vw, 18px);
+      color:var(--muted);
+      max-width: 70ch;
+    }
+    .ctaRow{display:flex; gap:12px; flex-wrap:wrap; margin-top:16px}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center; gap:10px;
+      padding:12px 16px; border-radius:14px;
+      border:1px solid var(--line);
+      background: rgba(255,255,255,.06);
+      color:var(--text);
+      font-weight:650;
+      transition: transform .08s ease, background .15s ease, border-color .15s ease;
+    }
+    .btn:hover{background: rgba(255,255,255,.1); border-color: rgba(255,255,255,.18)}
+    .btn:active{transform: translateY(1px)}
+    .metaGrid{
+      margin-top:18px;
+      display:grid; grid-template-columns: repeat(3, minmax(0,1fr));
+      gap:10px;
+    }
+    @media (max-width: 680px){ .metaGrid{grid-template-columns:1fr} }
+    .pill{
+      padding:10px 12px;
+      border:1px solid var(--line);
+      border-radius:14px;
+      background: rgba(0,0,0,.18);
+      color:var(--muted);
+      font-size:14px;
+    }
+    .pill b{color:var(--text)}
+    .cover{display:flex; align-items:center; justify-content:center; padding:18px}
+    .cover img{
+      width:100%;
+      max-width: 440px;
+      height:auto;
+      border-radius: 16px;
+      border:1px solid var(--line);
+      box-shadow: 0 18px 55px rgba(0,0,0,.65);
+    }
+    section{padding:18px 0}
+    h2{margin:0 0 10px; font-size:22px}
+    p{margin:0 0 12px}
+    .grid2{display:grid; grid-template-columns:1fr 1fr; gap:16px}
+    @media (max-width: 900px){ .grid2{grid-template-columns:1fr} }
+    .box{padding:18px}
+    .quote{
+      margin:0;
+      padding:16px 16px 14px;
+      border-left: 3px solid var(--accent);
+      background: rgba(255,255,255,.04);
+      border-radius: 12px;
+      color: var(--muted);
+      font-size: 16px;
+    }
+    .quote strong{color:var(--text)}
+    .tags{display:flex; flex-wrap:wrap; gap:8px; margin-top:10px}
+    .chip{
+      font-size:13px; color:var(--muted);
+      border:1px solid var(--line);
+      padding:7px 10px; border-radius:999px;
+      background: rgba(255,255,255,.03);
+    }
+    footer{
+      border-top:1px solid var(--line);
+      padding:22px 0 40px;
+      color:var(--muted);
+      font-size:14px;
+    }
+    .small{font-size:13px; color:var(--muted)}
+  </style>
+
+  <!-- JSON-LD (SEO estructurado) -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "name": "El precio del silencio",
+    "author": { "@type": "Person", "name": "Pacoluís Pérez" },
+    "inLanguage": "es",
+    "genre": ["Thriller", "Novela negra", "Suspense psicológico"],
+    "about": ["Barcelona", "mercado del arte", "escultura", "falsificación", "corrupción"],
+    "description": "Thriller noir ambientado en Barcelona: una restauradora detecta una falsificación imposible en una escultura y desata una cacería.",
+    "image": "https://spaintaiwan-arch.github.io/preciosilencio/assets/cover.jpg",
+    "url": "https://spaintaiwan-arch.github.io/preciosilencio/"
+  }
+  </script>
+</head>
+
+<body>
+  <header>
+    <div class="wrap nav">
+      <div class="brand">
+        <span class="dot" aria-hidden="true"></span>
+        <strong>El precio del silencio</strong>
+      </div>
+      <nav class="menu" aria-label="Navegación">
+        <a href="#sinopsis">Sinopsis</a>
+        <a href="#taglines">Taglines</a>
+        <a href="#autor">Autor</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="wrap">
+    <section class="hero" aria-label="Presentación del libro">
+      <div class="card book">
+        <span class="kicker">Thriller noir · Barcelona · Arte &amp; corrupción</span>
+        <h1>EL PRECIO DEL SILENCIO</h1>
+        <div class="author">PACOLUÍS PÉREZ</div>
+
+        <p class="tagline">
+          Una restauradora descubre una falsificación imposible en una escultura. Horas después, el dueño aparece muerto.
+          En Barcelona, la belleza puede ser la coartada… y el silencio, una condena.
+        </p>
+
+        <div class="ctaRow">
+          <a class="btn" href="#sinopsis">Leer sinopsis</a>
+          <a class="btn" href="#contacto">Contacto editorial</a>
+        </div>
+
+        <div class="metaGrid" aria-label="Datos rápidos">
+          <div class="pill"><b>Género:</b> thriller / novela negra</div>
+          <div class="pill"><b>Ambientación:</b> Barcelona</div>
+          <div class="pill"><b>Eje:</b> escultura, poder, secretos</div>
+        </div>
+
+        <p class="small" style="margin-top:10px;">
+          Página de presentación para lectura editorial y prensa.
+        </p>
+      </div>
+
+      <div class="card cover" aria-label="Portada">
+        <img src="assets/cover.jpg" alt="Portada de El precio del silencio, de Pacoluís Pérez" loading="eager" />
+      </div>
+    </section>
+
+    <section id="sinopsis" class="grid2" aria-label="Sinopsis">
+      <div class="card box">
+        <h2>Sinopsis</h2>
+        <p>
+          Clara Monfort vive en Barcelona, rodeada de restauraciones, barnices y verdades pequeñas que casi nadie ve.
+          Su trabajo es detectar lo falso. Su problema es que nunca se equivoca.
+        </p>
+        <p>
+          Cuando una <strong>escultura</strong> llega a su taller con una procedencia impecable —demasiado impecable— Clara descubre
+          una anomalía mínima: una firma que no encaja, una pátina que no debería existir, una historia demasiado perfecta para ser real.
+        </p>
+        <p>
+          Horas después, el propietario aparece muerto. La obra desaparece. Y Clara entiende que su hallazgo no era un detalle: era una sentencia.
+        </p>
+        <p>
+          Hugo Rivas, periodista de investigación hundido tras un escándalo que destruyó su carrera, ve en el caso la oportunidad de redimirse.
+          Clara lo considera peligroso, impulsivo… y quizá la peor compañía posible.
+        </p>
+        <p>
+          Pero a medida que avanzan, ambos descubren que la pieza no es solo una falsificación: es una llave.
+          Una llave que abre una red de corrupción, dinero y silencios comprados.
+        </p>
+        <p><strong>Callar puede salvarte. Decir la verdad puede matarte.</strong></p>
+      </div>
+
+      <div class="card box">
+        <h2>Tagline principal</h2>
+        <p class="quote">
+          <strong>“La verdad tiene precio. El silencio, consecuencias.”</strong><br/>
+          <span class="small">(uso promocional)</span>
+        </p>
+
+        <div style="height:12px"></div>
+
+        <h2 id="taglines">Taglines</h2>
+        <div class="tags" aria-label="Taglines">
+          <span class="chip">La verdad tiene precio. El silencio, consecuencias.</span>
+          <span class="chip">Una obra falsa. Un cadáver real.</span>
+          <span class="chip">En Barcelona, el arte también mata.</span>
+          <span class="chip">Descubrió un detalle. Y alguien decidió borrarla.</span>
+          <span class="chip">Cuando la belleza es la coartada, la muerte es el mensaje.</span>
+          <span class="chip">La falsificación era solo el comienzo.</span>
+        </div>
+
+        <div style="height:14px"></div>
+
+        <h2>Ficha rápida</h2>
+        <div class="tags" aria-label="Ficha rápida">
+          <span class="chip">Thriller noir contemporáneo</span>
+          <span class="chip">Barcelona: galerías, poder y dinero</span>
+          <span class="chip">Protagonista: restauradora</span>
+          <span class="chip">Tema: falsificación de escultura</span>
+          <span class="chip">Periodista de investigación</span>
+          <span class="chip">Corrupción y conspiración</span>
+        </div>
+      </div>
+    </section>
+
+    <section id="autor" aria-label="Autor">
+      <div class="card box">
+        <h2>Sobre el autor</h2>
+        <p>
+          <strong>Pacoluís Pérez</strong> escribe thrillers contemporáneos donde el poder, la corrupción y la ambición
+          se mezclan con pasiones humanas al límite. <em>El precio del silencio</em> es una historia noir ambientada
+          en Barcelona, en la frontera entre la belleza y la violencia.
+        </p>
+        <p class="small">
+          (Si quieres, pégame tu bio real y la dejo “de solapa editorial”: 4–6 líneas + versión larga.)
+        </p>
+      </div>
+    </section>
+
+    <section id="contacto" aria-label="Contacto">
+      <div class="card box">
+        <h2>Contacto</h2>
+        <p>Para solicitudes editoriales, prensa o derechos:</p>
+        <p class="small">
+          <!-- Cambia aquí tu email o método preferido -->
+          Email: <strong>tuemail@dominio.com</strong><br/>
+          Representación (si aplica): <strong>Agente / Editorial</strong>
+        </p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="wrap" style="padding:0">
+        <div>© <span id="year"></span> Pacoluís Pérez. Todos los derechos reservados.</div>
+        <div class="small" style="margin-top:6px;">
+          Web de presentación (GitHub Pages) · SEO: Open Graph + JSON-LD.
+        </div>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
